@@ -61,10 +61,12 @@ button:disabled{opacity:.6;cursor:wait}
 .done p{color:var(--ink-2)}
 
 /* STRIP */
-.strip{background:var(--charcoal);color:#fff}
-.strip-in{max-width:1180px;margin:0 auto;padding:18px 16px;display:grid;gap:12px;grid-template-columns:1fr;text-align:center}
-.strip b{display:block;font-family:var(--head);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--pink)}
-.strip span{font-size:14px;color:#d8d8d8}
+.strip{background:var(--cream);padding:30px 16px 36px}
+.strip-in{max-width:1000px;margin:0 auto;display:grid;gap:14px;grid-template-columns:1fr}
+.perk{display:flex;align-items:center;gap:16px;background:var(--white);border:2px solid var(--charcoal);border-radius:16px;padding:18px 20px;text-align:left;box-shadow:5px 5px 0 var(--pink)}
+.perk i{flex:none;width:52px;height:52px;border-radius:50%;background:var(--pink);display:flex;align-items:center;justify-content:center;font-style:normal;font-size:26px}
+.perk b{display:block;font-family:var(--head);font-size:18px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);line-height:1.2}
+.perk span{display:block;font-size:15px;color:#555;margin-top:2px}
 
 footer{text-align:center;padding:22px 16px 34px;font-size:13px;color:#777;background:var(--white)}
 footer strong{color:var(--ink)}
@@ -78,7 +80,10 @@ footer strong{color:var(--ink)}
   .banner-photo img{margin-top:0}
   .signup{padding-top:20px}
   .row{grid-template-columns:1fr 1fr}
-  .strip-in{grid-template-columns:repeat(3,1fr);padding:20px 28px}
+  .strip{padding:40px 28px 46px}
+  .strip-in{grid-template-columns:repeat(3,1fr);gap:20px}
+  .perk{flex-direction:column;text-align:center;padding:26px 20px}
+  .perk b{font-size:20px}
 }
 </style>
 </head>
@@ -123,9 +128,9 @@ footer strong{color:var(--ink)}
 
 <section class="strip">
   <div class="strip-in">
-    <div><b>First to know</b><span>Heads up before anyone else, and a message the moment it starts.</span></div>
-    <div><b>Free gifts</b><span>Free gifts with your order during the sale.</span></div>
-    <div><b>Limited stock</b><span>When it is gone, it is gone.</span></div>
+    <div class="perk"><i aria-hidden="true">&#9201;</i><div><b>First to know</b><span>Heads up before anyone else, and a message the moment it starts.</span></div></div>
+    <div class="perk"><i aria-hidden="true">&#127873;</i><div><b>Free gifts</b><span>Free gifts with your order during the sale.</span></div></div>
+    <div class="perk"><i aria-hidden="true">&#128293;</i><div><b>Limited stock</b><span>When it is gone, it is gone.</span></div></div>
   </div>
 </section>
 </main>
